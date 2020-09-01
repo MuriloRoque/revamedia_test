@@ -38,7 +38,7 @@ class TaurusSpider < Kimurai::Base
       item[:landlord_name] = 'Taurus Property'
       item[:landlord_phone] = '86122020'
       item[:landlord_email] = 'pjj@taurus.dk'
-      save_to "results.json", item, format: :pretty_json
+      save_to "taurusResults.json", item, format: :pretty_json
     rescue => e
       logger.error url
       raise e

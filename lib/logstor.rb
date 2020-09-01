@@ -32,7 +32,7 @@ class LogstorSpider < Kimurai::Base
       item[:landlord_name] = 'Løgstør Boligforening'
       item[:landlord_phone] = '98673241'
       item[:landlord_email] = 'post@logstorbo.dk'
-      save_to "results.json", item, format: :pretty_json
+      save_to "logstorResults.json", item, format: :pretty_json
     rescue => e
       logger.error url
       raise e
